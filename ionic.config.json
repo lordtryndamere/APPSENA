@@ -1,0 +1,7 @@
+{
+  "name": "aplicacion_sena",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,30 @@
+{
+    "usuarios":[
+        {
+            "name":"aprendiz",
+            "password":"sena"
+        },
+        {
+            "name":"Aprendiz",
+            "password":"123"
+        },
+        {
+            "name":"Kevin",
+            "password":"madara20"
+        },
+        {
+            "name":"Manuel",
+            "password":"sena"
+        },
+        {
+            "name":"Julian",
+            "password":"sena"
+        },
+        {
+            
+        }
+
+    ]
+
+
+}

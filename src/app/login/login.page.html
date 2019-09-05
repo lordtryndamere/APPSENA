@@ -1,0 +1,49 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/sena_logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <img class="login_image" src="/assets/login_image.jpg" alt="" />
+  <form #Forma='ngForm'  (ngSubmit)="login(Forma)" autocomplete="off">
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label position="stacked" color="primary">Usuario</ion-label>
+            <ion-input type="text" [(ngModel)]="username" name="username" required >
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked" color="primary">Password</ion-label>
+            <ion-input type="password" [(ngModel)]="password" name="password" required >
+            </ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="!isValid" class="alertDanger">{{error}}</div>
+
+        <ion-button expand="block" type="submit"   style="text-transform: none;">
+          <ion-icon name="person"></ion-icon>
+          Login
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+
+</ion-content>
